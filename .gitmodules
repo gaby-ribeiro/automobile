@@ -1,0 +1,9 @@
+[submodule "engine"]
+	path = engine
+	url = git@github.com:gaby-ribeiro/engine.git
+[submodule "rims"]
+	path = rims
+	url = git@github.com:gaby-ribeiro/rims.git
+[submodule "transmission"]
+	path = transmission
+	url = git@github.com:gaby-ribeiro/transmission.git
