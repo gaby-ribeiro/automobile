@@ -7,3 +7,4 @@
 [submodule "transmission"]
 	path = transmission
 	url = git@github.com:gaby-ribeiro/transmission.git
+	branch = manual-six-gears
