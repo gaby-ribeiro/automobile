@@ -4,7 +4,7 @@ on:
 jobs:
   branch-dispatch:
     if: ${{ startsWith(github.ref, 'refs/heads/') }}
-    runs-on: wsl
+    runs-on: wsl2
     steps:
       - uses: actions/checkout@v3
       - name: Dispacth branch creation to submodules
