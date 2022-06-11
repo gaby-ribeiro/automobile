@@ -1,0 +1,13 @@
+name: Cascade Branching
+on:
+  create
+jobs:
+  branch-dispatch:
+    if: ${{ startsWith(github.ref, 'refs/heads/') }}
+    runs-on: wsl
+    steps:
+      - uses: actions/checkout@v3
+      - name: Dispacth branch creation to submodules
+        run: |
+          echo "Creating branch $GITHUB_REF on all submodule in .gitmodules"
+          cat $GITHUB_WORKSPACE/.gitmodules
